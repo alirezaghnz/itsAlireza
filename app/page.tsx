@@ -19,21 +19,20 @@ export default function Home() {
       <Header />
 
       <section className="mt-4 py-20 text-center border-amber-50">
-        <h1 className="text-4xl font-bold mb-2">
+        <h1 className="text-4xl font-bold mb-2">Alireza Gholinezhad</h1>
+        <p className="text-xl text-green-600">Junior React Developer</p>
+        <p className="mt-4 text-gray-600">
           <Typewriter
-            words={["Alireza Gholinezhad"]}
+            words={[
+              " Passionate frontend developer skilled in React.js, Next.js, and TypeScript. Focused on building clean and responsive web apps.",
+            ]}
             loop={0}
             cursor
             cursorStyle="|"
-            typeSpeed={100}
-            deleteSpeed={60}
+            typeSpeed={70}
+            deleteSpeed={10}
             delaySpeed={1000}
           />
-        </h1>
-        <p className="text-xl text-green-600">Junior React Developer</p>
-        <p className="mt-4 text-gray-600">
-          Passionate frontend developer skilled in React.js, Next.js, and
-          TypeScript. Focused on building clean and responsive web apps.
         </p>
         <div className="mt-6 flex justify-center gap-4">
           <a
@@ -72,10 +71,15 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-6">Projects</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="p-6 bg-red-500 rounded-xl shadow hover:shadow-lg transition">
-            <h3 className="text-lg font-bold">Villa Reservation App</h3>
+            <div className="text-lg font-bold gap-2 flex">
+              <span> Villa Rezervation App</span>
+              <span className=" rounded-sm px-1 bg-blue-400">
+                Desktop First
+              </span>
+            </div>
             <p className="text-gray-900 mt-2">
               A web app for booking villas with authentication and date
-              selection. Built with React, Supabase, and Tailwind CSS.
+              selection. Built with React, Next, Supabase, and Tailwind CSS.
             </p>
             <div className="flex gap-4 mt-4">
               <a
@@ -96,10 +100,40 @@ export default function Home() {
           </div>
 
           <div className="p-6 bg-red-500 rounded-xl shadow hover:shadow-lg transition">
+            <div className="text-lg font-bold gap-2 flex">
+              <span> World Tour App</span>
+              <span className=" rounded-sm px-1 bg-blue-400">
+                Desktop First
+              </span>
+            </div>
+            <p className="text-gray-900 mt-2">
+              A React app that lets users mark locations on the map and save
+              their favorite spots around the world. Built with React, Leaflet
+              and tawilwindCss.
+            </p>
+            <div className="flex gap-4 mt-4">
+              <a
+                href="https://github.com/alirezaghnz/WorldTour"
+                target="_blank"
+                className="text-gray-900 border border-amber-50 px-2 rounded-lg hover:underline"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://test.com"
+                target="_blank"
+                className="text-gray-900 border border-amber-50 px-2 rounded-lg hover:underline"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <div className="p-6 bg-red-500 rounded-xl shadow hover:shadow-lg transition">
             <h3 className="text-lg font-bold">PizzaDelivery</h3>
             <p className="text-gray-900 mt-2">
-              Simple task manager app with CRUD operations. Built using Next.js
-              and TypeScript.
+              Fast, fresh, and customizable pizza delivery (Small Project) —
+              built with React & Redux.
             </p>
             <div className="flex gap-4 mt-4">
               <a
@@ -123,7 +157,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-10 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Alireza Gholinezhaad. All rights reserved.
+        © {new Date().getFullYear()} Alireza Gholinezhad. All rights reserved.
       </footer>
     </main>
   );
