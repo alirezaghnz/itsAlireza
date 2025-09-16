@@ -2,6 +2,8 @@
 import { Typewriter } from "react-simple-typewriter";
 import Header from "./_components/header";
 
+import { MdEmail } from "react-icons/md";
+
 export default function Home() {
   const skills = [
     "React.js",
@@ -36,11 +38,15 @@ export default function Home() {
         </p>
         <div className="mt-6 flex justify-center gap-4">
           <a
-            href="mailto:alirezagholinezhaad@gmail.com"
-            className="px-5 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
+            href="mailto:alirezagholienzhaad@gmail.com"
+            className="flex items-center gap-1 px-5 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
           >
-            Contact Me
+            <span>Contact</span>
+            <span>
+              <MdEmail size={20} />
+            </span>
           </a>
+
           <a
             href="https://github.com/alirezaghnz"
             target="_blank"
@@ -71,11 +77,9 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-6">Projects</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="p-6 bg-red-500 rounded-xl shadow hover:shadow-lg transition">
-            <div className="text-lg font-bold gap-2 flex">
-              <span> Villa Rezervation App</span>
-              <span className=" rounded-sm px-1 bg-blue-400">
-                Desktop First
-              </span>
+            <div className="gap-2 flex">
+              <span className="text-lg font-bold">Rezerv Villa</span>
+              <span className="rounded-sm px-1 bg-blue-400">Desktop First</span>
             </div>
             <p className="text-gray-900 mt-2">
               A web app for booking villas with authentication and date
@@ -90,7 +94,7 @@ export default function Home() {
                 GitHub
               </a>
               <a
-                href="https://test.com"
+                href="https://github.com/alirezaghnz/Rezervino"
                 target="_blank"
                 className="text-gray-900 border border-amber-50 px-2 rounded-lg hover:underline"
               >
@@ -100,11 +104,9 @@ export default function Home() {
           </div>
 
           <div className="p-6 bg-red-500 rounded-xl shadow hover:shadow-lg transition">
-            <div className="text-lg font-bold gap-2 flex">
-              <span> World Tour App</span>
-              <span className=" rounded-sm px-1 bg-blue-400">
-                Desktop First
-              </span>
+            <div className="gap-2 flex">
+              <span className="text-lg font-bold"> World Tour App</span>
+              <span className="rounded-sm px-1 bg-blue-400">Desktop First</span>
             </div>
             <p className="text-gray-900 mt-2">
               A React app that lets users mark locations on the map and save
@@ -120,7 +122,7 @@ export default function Home() {
                 GitHub
               </a>
               <a
-                href="https://test.com"
+                href="https://worldwtour.netlify.app/"
                 target="_blank"
                 className="text-gray-900 border border-amber-50 px-2 rounded-lg hover:underline"
               >
@@ -156,8 +158,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-10 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Alireza Gholinezhad. All rights reserved.
+      <footer className="py-10 text-center text-gray-500 text-sm border-t ">
+        © Alireza Gholinezhad
       </footer>
     </main>
   );

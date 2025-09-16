@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import GlobalLoading from "./_components/globalLoading";
 import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata = {
   title: "Alireza ghnz",
-  description: "test",
+  description: "A Personal Website",
 };
 
 export default function RootLayout({
